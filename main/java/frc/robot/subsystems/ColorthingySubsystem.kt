@@ -15,17 +15,6 @@ object ColorthingySubsystem : SubsystemBase() {
 
     val colorSensor = ColorSensorV
 
-    import com.revrobotics.ColorSensorV3
-    import edu.wpi.first.wpilibj.I2C
-    import edu.wpi.first.wpilibj2.command.SubsystemBase;
-    import kotlin.math.sqrt
-
-    //x represents rotations, but x was easier to write MICAH//
-    var x = 0
-        get() = field
-        set(value) {
-            field = value}
-
     object ColorthingySubsystem : SubsystemBase() {
 
         val colorSensor = ColorSensorV3(I2C.Port.kOnboard)
